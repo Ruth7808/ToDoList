@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // יצירת מופע מותאם אישית של Axios עם כתובת בסיס (Default Config)
 const apiClient = axios.create({
-  baseURL: "http://localhost:5269", // כתובת הבסיס
+  baseURL: process.env.REACT_APP_API_URL, // כתובת הבסיס
 });
 
 // הוספת Interceptor לתפיסת שגיאות בתגובה
